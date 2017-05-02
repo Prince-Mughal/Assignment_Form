@@ -33,7 +33,7 @@
         $Result = mysqli_query($CONNECTION,$Query);
         /* Check the Query */
         if($Result){
-            echo "Sucessfully Inserted.<br>";
+            echo "Successfully Inserted.<br>";
         }else{
             die("Couldn't Execute Query.<br>");}
  
