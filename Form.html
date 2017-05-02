@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Information Form | </title>
+            <style>
+                /* Style for Input Tag */
+                input[type=text]{
+                    padding-left: 8px;
+                    padding-right: 4px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: 3px solid green;
+                    transition: 0.5s;
+                    outline: none;
+                    width: 500px;}
+                /* Style for Submit Button */
+                input[type=submit] {
+                    background-color: green; /* Green */
+                    border: 2px solid green;
+                    color: white;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin-left: 400px;
+                    margin-right: 0px;
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                    cursor: pointer;}
+                label {
+                    color: green;
+                    font-weight: lighter;}
+            </style>
+        </head>
+        <body> <!-- Form Hanlder -->
+            <form action="Register.php" method = "_POST">
+                <div> <!-- Caption For The Field -->
+                    <label> Name </label>
+                </div>
+                <div> <!-- Input Hanlder For Name    -->
+                    <input name="Name"    type="text"  maxlength="40" />
+                </div>
+                <div> <!-- Caption For The Address   -->
+                    <label> Address </label>
+                </div>
+                <div> <!-- Input Hanlder For Address -->
+                    <input name="Address" type="text" maxlength="80" />
+                </div>
+                <div> <!-- Caption For The Phone     -->
+                    <label> Phone   </label>
+                </div>
+                <div> <!-- Input Hanlder For Phone   -->
+                    <input name="Phone"   type="text" maxlength="24" />
+                </div>
+                <div> <!-- Submit Button Handler     -->
+                    <input name="SUBMIT"  value="Register" type="submit"/>
+                </div>
+
+            </form>
+        </body>
+    </html>
